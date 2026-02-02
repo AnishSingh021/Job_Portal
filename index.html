@@ -2,100 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Job Portal - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Job Portal</h1>
-        <p>Your dream job is just one search away</p>
-        <hr>
-    </header>
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Jobs</a> |
-        <a href="#">Companies</a> |
-        <a href="#">Services</a> |
-        <a href="#">Login</a> |
-        <a href="#">Register</a>
-        <hr>
-    </nav>
-    <section>
-        <h2>Search Jobs</h2>
-        <form>
-            <label>Skill / Job Title:</label><br>
-            <input type="text" placeholder="e.g. Software Engineer"><br><br>
-
-            <label>Location:</label><br>
-            <input type="text" placeholder="e.g. Chandigarh"><br><br>
-
-            <label>Experience:</label><br>
-            <select>
-                <option>Fresher</option>
-                <option>1-2 Years</option>
-                <option>3-5 Years</option>
-                <option>5+ Years</option>
-            </select><br><br>
-
-            <input type="submit" value="Search Jobs">
-        </form>
-        <hr>
-    </section>
-    <section>
-        <h2>Popular Job Categories</h2>
-        <ul>
-            <li>IT & Software Jobs</li>
-            <li>Data Science</li>
-            <li>Marketing & Sales</li>
-            <li>Finance & Accounting</li>
-            <li>Core Engineering</li>
-            <li>Freshers Jobs</li>
+        <nav class="navbar">
+        <div class="nav-left">
+        <img src="images/ChatGPT_Image_Feb_2__2026__12_43_32_PM-removebg-preview.png" alt="logo" class="logo">
+        <ul class="nav-links">
+    <li class="dropdown">
+        <a href="#">Jobs</a>
+        <div class="dropdown-content">
+            <div class="column">
+                <h3>Popular categories</h3>
+                <a href="#">IT jobs</a>
+                <a href="#">Sales jobs</a>
+                <a href="#">Marketing jobs</a>
+            </div>
+            <div class="column">
+                <h3>Jobs in demand</h3>
+                <a href="#">Fresher jobs</a>
+                <a href="#">MNC jobs</a>
+                <a href="#">Remote jobs</a>
+            </div>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="#">Companies</a>
+        <div class="dropdown-content">
+            <div class="column">
+                <h3>Explore Categories</h3>
+                <a href="#">Unicorn</a>
+                <a href="#">MNC</a>
+                <a href="#">Startup</a>
+                <a href="#">Product based</a>
+            </div>
+            <div class="column">
+                <h3>Top Companies</h3>
+                <a href="#">Google</a>
+                <a href="#">Amazon</a>
+                <a href="#">Microsoft</a>
+            </div>
+            <div class="column">
+                <h3>Explore Collection</h3>
+                <a href="#">IT Companies</a>
+                <a href="#">Fintech Companies</a>
+                <a href="#">Sponsored Companies</a>
+            </div>
+        </div>
+    </li>
+    <li><a href="#">Services</a></li>
         </ul>
-        <hr>
-    </section>
-    <section>
-        <h2>Top Hiring Companies</h2>
-        <table border="1" cellpadding="5">
-            <tr>
-                <th>Company Name</th>
-                <th>Industry</th>
-                <th>Openings</th>
-            </tr>
-            <tr>
-                <td>TCS</td>
-                <td>IT Services</td>
-                <td>120</td>
-            </tr>
-            <tr>
-                <td>Infosys</td>
-                <td>Software</td>
-                <td>85</td>
-            </tr>
-            <tr>
-                <td>Wipro</td>
-                <td>Technology</td>
-                <td>60</td>
-            </tr>
-        </table>
-        <hr>
-    </section>
-    <section>
-        <h2>Why Choose Our Job Portal?</h2>
-        <p>
-            -> Trusted by thousands of job seekers<br>
-            -> Verified job listings<br>
-            -> Easy application process<br>
-            -> Career guidance and support
-        </p>
-        <hr>
-    </section>
-    <footer>
-        <p>&copy; 2026 Job Portal. All rights reserved.</p>
-        <p>
-            Contact Us | About Us | Privacy Policy
-        </p>
-    </footer>
+        </div>
+        <div class="nav-right">
+                <button class="btn-login">Login</button>
+                <button class="btn-register">Register</button>
+                <div class="for-employers"><select name="" id=""><option value="">For employers</option>
+                <option value=""></option></select></div>
+            </div>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <h1>Find your dream job now</h1>
+        <p>5 lakh+ jobs for you to explore</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Enter skills / designations / companies">
+            <select>
+                <option>Select experience</option>
+                <option>Fresher</option>
+                <option>1-3 Years</option>
+            </select>
+            <input type="text" placeholder="Enter location">
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+    <section class="company-categories">
+    <h2 class="section-title">Top companies hiring now</h2>
+    <div class="card-container">
+        <div class="cat-card">
+            <div class="cat-header">MNCs</div>
+            <p>1.3K+ are actively hiring</p>
+            <div class="logo-row">
+                <img src="https://imgs.search.brave.com/gi6VO-d8WZoJaYp0q6O0ttR_C8ltLomwZBCkrwNXTBo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnVpbHRpbi5jb20v/Y2RuLWNnaS9pbWFn/ZS9mPWF1dG8sZml0/PWNvbnRhaW4sdz0y/MDAsaD0yMDAscT0x/MDAvc2l0ZXMvd3d3/LmJ1aWx0aW4uY29t/L2ZpbGVzLzIwMjMt/MTAvRmxleFRyYWRl/LmpwZWc" alt="logo">
+            </div>
+        </div>
+        <div class="cat-card">
+            <div class="cat-header">Fintech</div>
+            <p>100+ are actively hiring</p>
+            <div class="logo-row">
+                <img src="https://imgs.search.brave.com/iusvDT7N1ses-OSmRtO23lh6l_QtpRTRHp-t0-SqN0k/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L21hc3RlcmNhcmQt/cG5nL21hc3RlcmNh/cmQtbG9nby1wbmct/dHJhbnNwYXJlbnQt/c3ZnLXZlY3Rvci1i/aWUtc3VwcGx5LTEu/cG5n" alt="logo">
+            </div>
+        </div>
+        </div>
+</section>
+<footer>
+        <div class="footer-links">
+            <ul>
+                <li><strong>Jobs</strong></li>
+                <li>Browse Jobs</li>
+                <li>Register Now</li>
+            </ul>
+            <ul>
+                <li><strong>About Us</strong></li>
+                <li>Careers</li>
+                <li>Employer Home</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">All rights reserved © 2026 Job Finder</div>
+</footer>
 </body>
 </html>
